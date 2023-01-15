@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/var/home/gabe/Code/boxkitarch'
+let g:netrw_dirhist_7='/var/home/gabe/Downloads/config/.git'
+let g:netrw_dirhist_6='/home/gabe/.config/cmus/playlists'
+let g:netrw_dirhist_5='/home/gabe/.config/cmus'
+let g:netrw_dirhist_4='/home/gabe/.config/ranger/plugins'
+let g:netrw_dirhist_3='/home/gabe/.config/alacritty'
+let g:netrw_dirhist_2='/home/gabe/.config/sxiv/exec'
+let g:netrw_dirhist_1='/home/gabe/.config/sxiv'
+let g:netrw_dirhist_0='/home/gabe/.config/ncmpcpp'
+let g:netrw_dirhist_9='/home/gabe/.config/mpd'
