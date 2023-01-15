@@ -1,0 +1,20 @@
+#!/bin/sh
+while read file
+do
+        case "$1" in
+        "C-d")
+                mv "$file" ~/.trash ;;
+        "C-r")
+                convert -rotate 90 "$file" "$file" ;;
+        "C-c")
+            path="$(pwd)" &&
+            path=$path"/" &&
+            path=$path$file &&
+            #feh --bg-scale $path ;;
+            echo -n "$path" | xclip -selection clipboard ;;
+        "C-w")
+            #var="echo $file | sed 's/ *$//g'" &&
+            #echo $var &&
+            feh --bg-scale $file ;;
+        esac
+done
