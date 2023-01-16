@@ -109,3 +109,4 @@ alias vn="love /var/home/gabe/.local/share/love/vnds.love"
 function chpwd() {
       ls
 }
+alias cls="clear"
