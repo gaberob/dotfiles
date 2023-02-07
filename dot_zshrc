@@ -15,7 +15,7 @@ else
 fi
 
 if [ -e /var/home/gabe/.nix-profile/etc/profile.d/nix.sh ]; then . /var/home/gabe/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-
+alias rm="rm -i"
 alias hst="history | tac | fzf" #fancy history
 alias rss="newsboat"
 alias sx="sxiv -ta *"
