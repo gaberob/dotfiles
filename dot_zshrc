@@ -43,3 +43,17 @@ fi
 function chpwd() {
       ls
 }
+
+
+#transmission aliases
+
+alias tc="transmission-remote"
+alias tl="transmission-remote -l" #list torrents
+alias wt="watch -n 3 'transmission-remote -l'" #watch torrents
+tf(){transmission-remote -t $1 -f;} #list files given an id
+ta(){transmission-remote -a '$1';} # add a torrent
+ts(){transmission-remote -t $1 -S;} #stop a torrent
+rmt(){transmission-remote -t $1 -r;} #remove a torrent
+
+alias cp='rsync -ah --progress'
+alias spt='flatpak run io.github.hrkfdn.ncspot'
