@@ -57,3 +57,5 @@ rmt(){transmission-remote -t $1 -r;} #remove a torrent
 
 alias cp='rsync -ah --progress'
 alias spt='flatpak run io.github.hrkfdn.ncspot'
+alias mntplex='sudo mount -t cifs -o credentials=/var/home/gabe/.smbcredentials,uid=1000,gid=1000 //192.168.90.5/plex-library /mnt/plex'
+alias mntshare='sudo mount -t cifs -o credentials=/home/gabe/.smbcredentials,uid=1000,gid=1000 //192.168.90.5/roberts-shared /mnt/shared'
