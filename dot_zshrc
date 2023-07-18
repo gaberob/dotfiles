@@ -1,7 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.local/bin:$PATH"
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="gallois"
 
 export LANG=C.UTF-8
 
@@ -63,3 +63,7 @@ alias cp='rsync -ah --progress'
 alias spt='flatpak run io.github.hrkfdn.ncspot'
 alias mntplex='sudo mount -t cifs -o credentials=/var/home/gabe/.smbcredentials,uid=1000,gid=1000 //192.168.90.5/plex-library /mnt/plex'
 alias mntshare='sudo mount -t cifs -o credentials=/home/gabe/.smbcredentials,uid=1000,gid=1000 //192.168.90.5/roberts-shared /mnt/shared'
+#alias rm="rmtrash"
+#source /usr/share/autojump/autojump.sh
+export PATH=$PATH:/usr/local/go/bin
+#export PATH=$PATH:$HOME/go
