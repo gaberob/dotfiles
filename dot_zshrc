@@ -23,7 +23,6 @@ alias rss="newsboat"
 alias sx="sxiv -ta *"
 alias sync="/var/home/gabe/Code/scripts/sync.sh"
 #alias vn="love /var/home/gabe/.local/share/love/vnds.love"
-alias cls="clear"
 
 
 #directory listing is fancy now
@@ -67,3 +66,4 @@ alias mntshare='sudo mount -t cifs -o credentials=/home/gabe/.smbcredentials,uid
 #source /usr/share/autojump/autojump.sh
 export PATH=$PATH:/usr/local/go/bin
 #export PATH=$PATH:$HOME/go
+bindkey '^v' clear-screen
