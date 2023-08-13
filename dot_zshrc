@@ -26,10 +26,8 @@ alias sync="/var/home/gabe/Code/scripts/sync.sh"
 
 
 #directory listing is fancy now
-has_exa=$(which exa 2>&1)
-grepped=$(echo $has_exa | grep -i "which")
-echo $grepped
-if [ "$grepped" = "" ]
+file="/usr/bin/exa"
+if [[ -f $file ]]
 then
     alias ls='exa --group-directories-first --icons --color-scale -l -g'
     alias lt='exa --tree --level=2 --icons' # Show in tree view
@@ -67,3 +65,4 @@ alias mntshare='sudo mount -t cifs -o credentials=/home/gabe/.smbcredentials,uid
 export PATH=$PATH:/usr/local/go/bin
 #export PATH=$PATH:$HOME/go
 bindkey '^v' clear-screen
+alias just="just -f ~/.local/share/just/justfile"
