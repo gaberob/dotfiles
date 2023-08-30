@@ -63,6 +63,7 @@ alias mntshare='sudo mount -t cifs -o credentials=/home/gabe/.smbcredentials,uid
 #alias rm="rmtrash"
 #source /usr/share/autojump/autojump.sh
 export PATH=$PATH:/usr/local/go/bin
-#export PATH=$PATH:$HOME/go
+export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/go/bin
 bindkey '^v' clear-screen
 alias just="just -f ~/.local/share/just/justfile"
