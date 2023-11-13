@@ -1,10 +1,12 @@
+source ~/.zplug/init.zsh
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/share/applications:$PATH"
 export PATH="$HOME/.local/share/flatpak/exports/bin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+source geometry/geometry.zsh
 
-
-ZSH_THEME="gallois"
+#ZSH_THEME="gallois"
 
 export LANG=C.UTF-8
 
@@ -23,6 +25,7 @@ if [ -e /var/home/gabe/.nix-profile/etc/profile.d/nix.sh ]; then . /var/home/gab
 alias rm="rm -i"
 alias hst="history | tac | fzf" #fancy history
 alias rss="newsboat"
+alias rss-proxy="newsboat --proxy 127.0.0.1:1080 --proxy-type socks5"
 alias sx="sxiv -ta *"
 alias sync="/var/home/gabe/Code/scripts/sync.sh"
 #alias vn="love /var/home/gabe/.local/share/love/vnds.love"
@@ -73,5 +76,6 @@ alias just="just -f ~/.local/share/just/justfile"
 alias vf-proxy="ssh -D 1080 -N -i ~/.ssh/vf-aws grob12@vf-aws"
 alias kali-proxy="ssh -D 1080 -N -i ~/.ssh/vf-aws gabe@cyberia"
 alias proxy="proxychains -q"
+alias open="xdg-open"
 
 source /var/home/gabe/.config/broot/launcher/bash/br
