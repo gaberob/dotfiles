@@ -72,6 +72,10 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$HOME/go/bin
 bindkey '^v' clear-screen
+bindkey '^b' backward-word
+bindkey '^f' forward-word
+bindkey '^d' kill-word
+
 alias just="just -f ~/.local/share/just/justfile"
 alias vf-proxy="ssh -D 1080 -N -i ~/.ssh/vf-aws grob12@vf-aws"
 alias kali-proxy="ssh -D 1080 -N -i ~/.ssh/vf-aws gabe@cyberia"
