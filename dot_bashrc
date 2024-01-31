@@ -38,10 +38,6 @@ alias cp='rsync -ah --progress'
 alias mntplex='sudo mount -t cifs -o credentials=/var/home/gabe/.smbcredentials,uid=1000,gid=1000 //192.168.90.5/plex-library /mnt/plex'
 alias mntshare='sudo mount -t cifs -o credentials=/home/gabe/.smbcredentials,uid=1000,gid=1000 //192.168.90.5/roberts-shared /mnt/shared'
 
-bindkry '^v' clear-screen
-bindkey '^d' kill-word
-bindkey '^f' forward-word
-bindkey '^b' backward-word
 
 
 if [[ -n $SSH_CONNECTION ]]; then
