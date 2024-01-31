@@ -1,0 +1,5 @@
+set bind-tty-special-chars off
+Control-v: clear-screen
+Control-d: kill-word
+Control-f: forward-word
+Control-b: backward-word
