@@ -45,3 +45,5 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='vim'
 fi
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
