@@ -28,6 +28,7 @@ alias rss="newsboat"
 alias rss-proxy="newsboat --proxy 127.0.0.1:1080 --proxy-type socks5"
 alias sx="sxiv -ta *"
 alias sync="/var/home/gabe/Code/scripts/sync.sh"
+alias fmpv='flatpak run io.mpv.Mpv'
 #alias vn="love /var/home/gabe/.local/share/love/vnds.love"
 
 
