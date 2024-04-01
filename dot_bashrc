@@ -39,7 +39,7 @@ alias blog='flatpak run org.gnome.gitlab.somas.Apostrophe'
 alias mntplex='sudo mount -t cifs -o credentials=/var/home/gabe/.smbcredentials,uid=1000,gid=1000 //192.168.90.5/plex-library /mnt/plex'
 alias mntshare='sudo mount -t cifs -o credentials=/home/gabe/.smbcredentials,uid=1000,gid=1000 //192.168.90.5/roberts-shared /mnt/shared'
 alias fmpv='flatpak run io.mpv.Mpv'
-
+alias yt-dlp-full='yt-dlp --sponsorblock-mark all --embed-chapters --embed-thumbnail --embed-metadata --write-subs  --write-auto-subs'
 
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'

@@ -84,6 +84,9 @@ alias vf-proxy="ssh -D 1080 -N -i ~/.ssh/vf-aws grob12@vf-aws"
 alias kali-proxy="ssh -D 1080 -N -i ~/.ssh/vf-aws gabe@cyberia"
 alias proxy="proxychains -q"
 alias open="xdg-open"
+alias yt-dlp-full='yt-dlp --sponsorblock-mark all --embed-chapters --embed-thumbnail --embed-metadata --write-subs  --write-auto-subs'
+alias fmpv='flatpak run io.mpv.Mpv'
+
 
 #source /var/home/gabe/.config/broot/launcher/bash/br
 
